@@ -49,4 +49,4 @@ vowels = ['a','e','i','o','u','y']
 print([letter for letter in 'amazing' if letter not in vowels])
 
 # 10. Generate a list with the value ...
-print([[num for num in range(10)] for i in range(9)] )
+print([[num for num in range(10li)] for i in range(9)] )

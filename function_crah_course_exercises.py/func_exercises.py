@@ -237,6 +237,18 @@ def intersection(lst1, lst2):
 # one_addition(2,2)   -> 4
 # one_addition(2,2)   -> None
 # one_addition(12,200)-> None
+def once(func):
+    has_been_called = False
+
+    def wrapper(*args, **kwargs):
+        nonlocal has_been_called
+        if has_been_called:
+            return None
+        has_been_called = True
+        return func(*args, **kwargs)
+
+    return wrapper
+
 
 
 # SUPER BONUS
